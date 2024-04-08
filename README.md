@@ -1,19 +1,19 @@
-# Pàgina web amb bootstrap amb:
+# Página web con bootstrap con:
 
-- Barra de navegació superior
-- Fotografies i text
-- Responsive amb grid
+- Barra de navegación superior
+- Fotografías y texto
+- Responsive con grid
 
-## Temàtica: resum dels components arduino que heu fet servir durant el curs. Cal fer algunes fotografies pròpies, altres poden ser d'internet i descriure que fa cada component.
+## Temática: resumen de los componentes arduino que ha utilizado durante el curso. Hay que tomar algunas fotografías propias, otras pueden ser de internet y describir que hace cada componente.
 
-Cal afegir enllaços als projectes tinkercad que heu fet i/o a altres llocs web amb més informació.
+Hay que añadir enlaces a los proyectos tinkercad que ha realizado y/oa otros sitios web con más información.
 
-La barra de navegació superior ha de tenir enllaços interns per a saltar a les diferents parts de la pàgina.
+La barra de navegación superior debe tener enlaces internos para saltar a las distintas partes de la página.
 
-Es valorarà fer servir el màxim de components de bootstrap com:
+Se valorará utilizar el máximo de componentes de bootstrap como:
 
 - pop overs
 - badges
 - carousel
-- Scrollspy amb el menú de navegació
-- dark & light mode amb botó al menú de navegació per canviar de mode
+- Scrollspy con el menú de navegación
+- dark & light mode con botón en el menú de navegación para cambiar de modo
