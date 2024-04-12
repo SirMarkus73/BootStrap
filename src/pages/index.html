@@ -43,9 +43,9 @@
 
         </nav>
     </header>
-    <main class="p-2">
+    <main class="p-3 justify-content-center flex-column text-center">
         <h1> El diario de Arduino: Componentes Esenciales para Tus Proyectos</h1>
-        <article class="col-6">
+        <article class="col-12">
             <p>
 
                 Bienvenido a Arduino Fácil, tu destino en línea para explorar el fascinante mundo de Arduino y sus
@@ -56,12 +56,12 @@
                 pueden llevar tus proyectos al siguiente nivel:
             </p>
         </article>
-        <section class="container row justify-content-center align-items-center ">
+        <section class="container row justify-content-center align-items-center gap-1">
             <h2 class="text-center">Componentes</h2>
-            <article class=" flex-column card p-3 gap-2 col-sm-12 col-6" id="LED">
+            <article class="card p-2 gap-2 col-sm-12 col-6" id="LED">
                 <h3 class="text-center"><mark>LED</mark></h3>
-                <div class="container row">
-                    <p class="col-6">
+                <div class="container row justify-content-center">
+                    <p class="col-lg-6 col-sm-12">
                         La luz emitida por diodo (LED) es fundamental en proyectos de Arduino, perfecta
                         para
                         aprender
@@ -70,68 +70,87 @@
                         tu propia
                         matriz de LEDs, las posibilidades son infinitas.
                     </p>
-                    <img src="../img/LED.webp" alt="Diodo LED" class="col-6 ratio-16x9 w-25">
+                    <img src="../img/LED.webp" alt="Diodo LED" class="col-6 ratio-1x1 w-25 col-sm-12"
+                        style="min-width: 150px;">
                 </div>
             </article>
-            <article class="flex-column card p-3 gap-2 col-sm-12 col-6" id="BOTON">
+            <article class="card p-2 gap-2 col-sm-12 col-6" id="BOTON">
                 <h3 class="text-center"><mark>Botón</mark></h3>
-                <p>
-                    El botón o pulsador es el componente de entrada más básico pero esencial. Te
-                    enseñamos
-                    a
-                    detectar interacciones físicas, una habilidad clave para controlar todo tipo de dispositivos
-                    electrónicos
-                    con Arduino.
-                </p>
-                <img src="../img/pulsador.jpg" alt="Botón" class="col-6 ratio-16x9 w-25">
+                <div class="container row justify-content-center">
+                    <p class="col-lg-6 col-sm-12">
+                        El botón o pulsador es el componente de entrada más básico pero esencial. Te
+                        enseñamos
+                        a
+                        detectar interacciones físicas, una habilidad clave para controlar todo tipo de dispositivos
+                        electrónicos
+                        con Arduino.
+                    </p>
+                    <img src="../img/pulsador.jpg" alt="Botón" class="col-6 ratio-1x1 w-25 col-sm-12"
+                        style="min-width: 150px;">
+                </div>
             </article>
-            <article class="flex-column card p-3 gap-2 col-sm-12 col-6" id="RELÉ">
+            <article class="card  p-2 gap-2 col-sm-12 col-6" id="RELÉ">
                 <h3 class="text-center"><mark>Relé</mark></h3>
-                <p>
-                    El relé es un interruptor controlado eléctricamente que te permite encender o
-                    apagar
-                    dispositivos de mayor potencia que no pueden ser controlados directamente por Arduino. Es ideal para
-                    proyectos de domótica, donde necesitas controlar lámparas, ventiladores, o incluso sistemas de
-                    riego.
-                </p>
-                <img src="../img/Rele.jpg" alt="Relé" class="col-6 ratio-16x9 w-25">
+                <div class="container row justify-content-center">
+                    <p class="col-lg-6 col-sm-12">
+                        El relé es un interruptor controlado eléctricamente que te permite encender o
+                        apagar
+                        dispositivos de mayor potencia que no pueden ser controlados directamente por Arduino. Es ideal
+                        para
+                        proyectos de domótica, donde necesitas controlar lámparas, ventiladores, o incluso sistemas de
+                        riego.
+                    </p>
+                    <img src="../img/Rele.jpg" alt="Relé" class="col-6 ratio-1x1 w-25 col-sm-12"
+                        style="min-width: 150px;">
+                </div>
             </article>
-            <article class="flex-column card p-3 gap-2 col-sm-12 col-6" id="DHT11">
+            <article class="card  p-2 gap-2 col-sm-12 col-6" id="DHT11">
                 <h3 class="text-center"><mark>DHT11</mark></h3>
-                <p>
-                    Este sensor de temperatura y humedad es perfecto para proyectos ambientales. Ya
-                    sea
-                    que
-                    estés
-                    construyendo una estación meteorológica casera o un sistema de control para tu invernadero, el DHT11
-                    es
-                    fácil de usar y proporciona datos valiosos para tus proyectos.
-                </p>
-                <img src="../img/DHT11.jpg" alt="DHT11" class="col-6 ratio-16x9 w-25">
+                <div class="container row justify-content-center">
+                    <p class="col-lg-6 col-sm-12">
+                        Este sensor de temperatura y humedad es perfecto para proyectos ambientales. Ya
+                        sea
+                        que
+                        estés
+                        construyendo una estación meteorológica casera o un sistema de control para tu invernadero, el
+                        DHT11
+                        es
+                        fácil de usar y proporciona datos valiosos para tus proyectos.
+                    </p>
+                    <img src="../img/DHT11.jpg" alt="DHT11" class="col-6 ratio-1x1 w-25 col-sm-12"
+                        style="min-width: 150px;">
+                </div>
             </article>
-            <article class="flex-column card p-3 gap-2 col-sm-12 col-6" id="SERVOMOTOR">
+            <article class="card  p-2 gap-2 col-sm-12 col-6" id="SERVOMOTOR">
                 <h3 class="text-center"><mark>ServoMotor</mark></h3>
-                <p>
-                    Controla con precisión el movimiento. Los servomotores son ideales para
-                    proyectos
-                    que
-                    requieren movimientos precisos o posicionamiento controlado, cómo brazos robóticas o sistemas de
-                    seguimiento
-                    solar.
-                </p>
-                <img src="../img/ServoMotor.jpg" alt="ServoMotor" class="col-6 ratio-16x9 w-25">
+                <div class="container row justify-content-center">
+                    <p class="col-lg-6 col-sm-12">
+                        Controla con precisión el movimiento. Los servomotores son ideales para
+                        proyectos
+                        que
+                        requieren movimientos precisos o posicionamiento controlado, cómo brazos robóticas o sistemas de
+                        seguimiento
+                        solar.
+                    </p>
+                    <img src="../img/ServoMotor.jpg" alt="ServoMotor" class="col-6 ratio-1x1 w-25 col-sm-12"
+                        style="min-width: 150px;">
+                </div>
             </article>
-            <article class="flex-column card p-3 gap-2 col-sm-12 col-6" id="ESP-01">
+            <article class="card  p-2 gap-2 col-sm-12 col-6" id="ESP-01">
                 <h3 class="text-center"><mark>ESP-01</mark></h3>
-                <p>
-                    Basado en el ESP8266, este módulo Wi-Fi te permite agregar fácilmente
-                    conectividad
-                    a
-                    Internet
-                    a tus proyectos de Arduino. Desde controlar dispositivos a través de Internet hasta recoger datos de
-                    sensores remotos, el ESP-01 abre un mundo de posibilidades para proyectos IoT.
-                </p>
-                <img src="../img/ESP-01.jpg" alt="ESP-01" class="col-6 ratio-16x9 w-25">
+                <div class="container row justify-content-center">
+                    <p class="col-lg-6 col-sm-12">
+                        Basado en el ESP8266, este módulo Wi-Fi te permite agregar fácilmente
+                        conectividad
+                        a
+                        Internet
+                        a tus proyectos de Arduino. Desde controlar dispositivos a través de Internet hasta recoger
+                        datos de
+                        sensores remotos, el ESP-01 abre un mundo de posibilidades para proyectos IoT.
+                    </p>
+                    <img src="../img/ESP-01.jpg" alt="ESP-01" class="col-6 ratio-1x1 w-25 col-sm-12"
+                        style="min-width: 150px;">
+                </div>
             </article>
         </section>
         <article>
