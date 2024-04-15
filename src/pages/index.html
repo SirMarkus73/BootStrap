@@ -3,47 +3,56 @@
 
 
 <head>
-    <!-- Meta tags necessaris -->
+    <!-- Meta tags necesarias -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- CSS del framework bootstrap -->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <!-- Box Icons -->
 
 
     <title>El diario de Arduino</title>
 </head>
 
 
-<body data-bs-theme="dark">
-    <header class="card-header">
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+    <header class="card-header fixed-top" data-bs-offset="100">
 
 
-        <nav class="navbar navbar-expand-sm bg-secondary container-fluid p-2">
+        <nav
+            class="nav navbar nav-pills navbar-expand-sm bg-primary container-fluid p-1 flex-row justify-content-around">
+            <div class="flex-row justify-content-start" style="width: max-content;">
+                <a class="navbar-brand" href="#">El diario de Arduino</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse navbar-nav " id="collapsibleNavbar" style="width: fit-content;">
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Componentes
+                            básicos</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#LED">LED</a></li>
+                            <li><a class="dropdown-item" href="#BOTON">Botón</a></li>
+                            <li><a class="dropdown-item" href="#RELÉ">Relé</a></li>
+                        </ul>
+                    </div>
+                    <a class="nav-item nav-link" href="#DHT11">DHT11</a>
+                    <a class="nav-item nav-link" href="#SERVOMOTOR">ServoMotor</a>
+                    <a class="nav-item nav-link" href="#ESP-01">ESP-01</a>
 
-            <a class="navbar-brand" href="#">El diario de Arduino</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse navbar-nav" id="collapsibleNavbar">
-                <div class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Componentes
-                        básicos</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#LED">LED</a></li>
-                        <li><a class="dropdown-item" href="#BOTON">Botón</a></li>
-                        <li><a class="dropdown-item" href="#RELÉ">Relé</a></li>
-                    </ul>
                 </div>
-                <a class="nav-item nav-link" href="#DHT11">DHT11</a>
-                <a class="nav-item nav-link" href="#SERVOMOTOR">ServoMotor</a>
-                <a class="nav-item nav-link" href="#ESP-01">ESP-01</a>
-
             </div>
+            <a id="dark-light-button"><i class=' bx bxs-palette' style="font-size: x-large;" id="dark-light-icon"></i>
 
-        </nav>
+
     </header>
-    <main class="p-3 justify-content-center flex-column text-center">
+    <main class="p-3 justify-content-center flex-column text-center row gap-5">
         <h1> El diario de Arduino: Componentes Esenciales para Tus Proyectos</h1>
         <article class="col-12">
             <p>
@@ -56,9 +65,9 @@
                 pueden llevar tus proyectos al siguiente nivel:
             </p>
         </article>
-        <section class="container row justify-content-center align-items-center gap-1">
+        <section class=" justify-content-center align-items-center gap-1 col-12 ">
             <h2 class="text-center">Componentes</h2>
-            <article class="card p-2 gap-2 col-sm-12 col-6" id="LED">
+            <article class="card p-2 gap-2 col-sm-12 col-3 " id="LED">
                 <h3 class="text-center"><mark>LED</mark></h3>
                 <div class="container row justify-content-center">
                     <p class="col-lg-6 col-sm-12">
@@ -169,8 +178,49 @@
 
 </body>
 
+<style>
+    html {
+        scroll-padding-top: 70px;
+    }
+</style>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+
+<script>
+
+    // default theme:
+    document.documentElement.setAttribute('data-bs-theme', 'dark')
+    document.body.setAttribute('data-bs-theme', 'dark')
+
+    // dark and light mode
+
+    let darkLightIcon = document.getElementById('dark-light-icon')
+
+    document.getElementById('dark-light-button').addEventListener('click', () => {
+        if (document.documentElement.getAttribute('data-bs-theme') == 'dark') {
+            document.body.removeAttribute('data-bs-theme')
+            document.documentElement.setAttribute('data-bs-theme', 'light')
+            document.body.setAttribute('data-bs-theme', 'light')
+
+            // Icon Change  
+            darkLightIcon.classList.remove("bx-palette")
+            darkLightIcon.classList.add("bxs-palette")
+
+        }
+        else {
+            document.body.removeAttribute('data-bs-theme')
+            document.documentElement.setAttribute('data-bs-theme', 'dark')
+            document.body.setAttribute('data-bs-theme', 'dark')
+
+            // Icon Change
+            darkLightIcon.classList.remove("bxs-palette")
+            darkLightIcon.classList.add("bx-palette")
+
+
+        }
+    })
+</script>
 
 </html>
